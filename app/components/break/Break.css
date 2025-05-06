@@ -1,0 +1,18 @@
+.break-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: #D8E9A8;
+  color: black;
+  font-weight: 800;
+  border: 5px solid #4E9F3D;
+}
+.break-container h1 {
+  font-size: 38px;
+  font-family: acme;
+  color: #000;
+  margin-left: 50px;
+}

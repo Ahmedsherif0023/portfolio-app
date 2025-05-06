@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180vh;
+  height: 10vh; /* Full viewport height to center it vertically */
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-family: acme;
+  margin-top: 30px;
+}
+
+
+.links{
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+  margin-top: 0px;
+}
+.links a{
+  margin:0px 30px;
+
+}
+
+
+.logo{
+  width: 150px;
+}
+
+.call-btn{
+  background-color: #D8E9A8; 
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
