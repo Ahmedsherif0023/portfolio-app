@@ -42,6 +42,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+      
       <Break />
       <div className="facts">
         <div className="facts-img"><img src={me} alt="my first image" className="me1" />
@@ -103,13 +111,13 @@ export default function Home() {
       <div className="contact-div">
         <h1>Ready To make your dream come true?!</h1>
         <p>Just Contact me to level up your business</p>
-        <div className="btn">
+        <div className="btn-container">
           <div className="call-btn"><a href="https://www.instagram.com/ishefo0" target="_blank">
           <div className="call-btnn">
             <img src={instagram} alt="" className="call-imgg" /> Instagram
           </div>
           </a></div>
-          <div className="call-btn"><a href="https://wa.me/+201274375560">
+          <div className="call-btn"><a href="https://wa.me/+201274375560" target="_blank">
           <div className="call-btnn">
              <img src={whatsapp} alt="" className="call-imgg" />Whatsapp
           </div></a></div>
