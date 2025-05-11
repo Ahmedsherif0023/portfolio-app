@@ -1,38 +1,43 @@
 .navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it to the top of the viewport */
+  width: 80%; /* Make it span the full width of the browser */
+  margin: auto;
+  height: 10vh; /* Adjust the height as needed */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 180vh;
-  height: 10vh; /* Full viewport height to center it vertically */
-  text-align: center;
   padding: 10px;
-  border-radius: 20px;
-  margin-top: 10px;
-  font-family: acme;
-  margin-top: 30px;
+  border-radius: 30px; /* Optional: Rounded corners */
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
 
+.links a:hover {
+  color: #D8E9A8;
+  transition: 0.5s;
+}
 
-.links{
+.links {
   font-size: 20px;
   font-weight: bolder;
-  color: black;
-  margin-top: 0px;
-}
-.links a{
-  margin:0px 30px;
-
+  color: white;
 }
 
+.links a {
+  margin: 0px 30px;
+}
 
-.logo{
+.logo {
   width: 150px;
 }
 
-.call-btn{
-  background-color: #D8E9A8; 
+.call-btn {
+    background: linear-gradient(135deg, #1e5128, #4e9f3d);
   border: none;
-  color: black;
+  color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;

@@ -6,6 +6,7 @@ import coffee from "../../public/coffee.png";
 import Card from "../components/card/Card";
 import WeatherApp from "../../public/Weather-App.png";
 import ToDoApp from "../../public/Todo-List.png";
+import FloatingBackground from "../components/FloatingBackground/FloatingBackground";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "Projects" },
@@ -16,8 +17,9 @@ export function meta({ }: Route.MetaArgs) {
 export default function Projects() {
   return (
     <div className="projects-page">
-      <div className="projects-container">
+      <FloatingBackground />
         <Navbar />
+      <div className="projects-container">
         <div className="projectss">
           <div className="left-sec">
             <h1>My Projects & code!</h1>

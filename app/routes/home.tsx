@@ -15,7 +15,7 @@ import customer3 from "../../public/customer3.png";
 import customer4 from "../../public/customer4.png";
 import instagram from "../../public/instagram.png";
 import whatsapp from "../../public/whatsapp.png";
-
+import FloatingBackground from "../components/FloatingBackground/FloatingBackground";
 import mine from "../../public/x.png";
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -27,6 +27,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return (
     <div className="home-container">
+      <FloatingBackground />
       <div className="h-container">
         <Navbar />
         <div className="main flex-center">
@@ -36,12 +37,19 @@ export default function Home() {
             </h1>
             <h2>I’m a senior <strong>React.js developer , </strong>
               creates <strong>responsive</strong> web apps</h2>
+            <div className="call-btn view-projects">
+              <a href="/projects">View projects</a>
+            </div>
+            <div className="call-btn resume">
+              <a href="https://drive.google.com/file/d/1EuW1V634lJ3vUq6rT7SKC-YUXU7_loIU/view?usp=drive_link" target='_blank'>Download Resume</a>
+            </div>
           </div>
           <div className="main-img">
             <img src={image} alt="image" />
           </div>
         </div>
       </div>
+<Break />
 
 
 
@@ -49,8 +57,6 @@ export default function Home() {
 
 
 
-      
-      <Break />
       <div className="facts">
         <div className="facts-img"><img src={me} alt="my first image" className="me1" />
           <img src={me2} alt="my second img" className="me2" />
@@ -113,14 +119,14 @@ export default function Home() {
         <p>Just Contact me to level up your business</p>
         <div className="btn-container">
           <div className="call-btn"><a href="https://www.instagram.com/ishefo0" target="_blank">
-          <div className="call-btnn">
-            <img src={instagram} alt="" className="call-imgg" /> Instagram
-          </div>
+            <div className="call-btnn">
+              <img src={instagram} alt="" className="call-imgg" /> Instagram
+            </div>
           </a></div>
           <div className="call-btn"><a href="https://wa.me/+201274375560" target="_blank">
-          <div className="call-btnn">
-             <img src={whatsapp} alt="" className="call-imgg" />Whatsapp
-          </div></a></div>
+            <div className="call-btnn">
+              <img src={whatsapp} alt="" className="call-imgg" />Whatsapp
+            </div></a></div>
 
         </div>
       </div>
