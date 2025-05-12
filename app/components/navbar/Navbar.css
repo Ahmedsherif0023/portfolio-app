@@ -16,7 +16,7 @@
 }
 
 .links a:hover {
-  color: #D8E9A8;
+  color: #d8e9a8;
   transition: 0.5s;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .call-btn {
-    background: linear-gradient(135deg, #1e5128, #4e9f3d);
+  background: linear-gradient(135deg, #1e5128, #4e9f3d);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -47,4 +47,75 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 30px;
+}
+.burger-menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger-menu .line {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex; /* Show burger menu on small screens */
+    margin-left: 20px;
+    transition: ease-in-out 0.5s;
+  }
+
+  .links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .links.open {
+    display: flex; /* Show links when burger menu is toggled */
+    margin-right: 35%;
+    transition: ease-in-out 0.5s;
+  }
+
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 2.5;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar {
+    height: 70px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .navbar h1 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .links a {
+    margin: 0px 10px;
+  }
+  .navbar .call-btn {
+    scale: 0.8;
+    font-size: 20px;
+  }
 }

@@ -265,7 +265,7 @@ call-btnn {
   margin-bottom: 0px;
   padding: 0px;
   height: 80vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color:transparent;
   border-radius: 20px;
 }
 
@@ -744,4 +744,128 @@ home-container
 
 .btn:hover {
   background-color: #2f4d2f;
+}
+
+
+@media (max-width:768px) {
+  .flex-center{
+    margin-top: 350px;
+    flex-direction: column;
+    height: auto; /* Allow height to adjust */
+  }
+  .main-img{
+    scale: 0.8;
+    margin: auto;
+    margin-top: -70px;
+  }
+
+  .facts{
+    scale: 0.7;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .facts-img{
+    margin-right: 250px;
+    margin-left: -180px;
+  }
+  .facts-txt{
+    margin-left: 100px;
+  }
+  .call-div{
+    scale: 0.9;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .call-div .call-btn{
+    scale: 1.2;
+    margin-top: -1000px;
+  }
+
+  .contact-div{
+    scale: 0.7;
+    margin: auto;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    width: 100%;
+    margin-top: 45px;
+  }
+  .main-h1{
+    margin: auto;
+  }
+  .main-h1 .call-btn {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .facts{
+    font-size: 20px;
+    flex-direction: column;
+  }
+  .facts-img{
+    width: 100%;
+    height: 100%;
+    margin-left:290px;
+    margin-bottom: 40px;
+    scale: 1.5;
+  }
+
+  .call-txt{
+    flex-direction: column;
+    margin-top: -200px;
+  }
+
+  .call-div{
+    margin-left: 20px;
+    flex-direction: column ;
+  }
+
+  .call-div .call-image img{
+    scale: 1.2;
+    margin: 30px 0px 0px 0px;
+  }
+
+  .call-div .call-btn{
+    margin-right: 60px;
+    margin-top: 100px;
+  }
+
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  scale: 1.5;
+}
+.btn-container .call-btn{
+  width: 50%;
+  margin: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.projects-container{
+  scale: 0.8;
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-bottom: -200px;
+}
+.projectss{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-container .left-sec p{
+  margin-left: -60px;
+
+}
+
+.projects-container .right-sec{
+  margin-left: -80px;
+}
+
+.coding-projects{
+  margin-top: 100px;
+}
 }
