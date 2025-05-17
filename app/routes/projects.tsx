@@ -7,6 +7,7 @@ import Card from "../components/card/Card";
 import WeatherApp from "../../public/Weather-App.png";
 import ToDoApp from "../../public/Todo-List.png";
 import FloatingBackground from "../components/FloatingBackground/FloatingBackground";
+import Deutschly from "../../public/Deutschly.png"
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "Projects" },
@@ -51,7 +52,13 @@ export default function Projects() {
               liveLink="https://todo-list-by-shefo.vercel.app/"
               githubLink="https://github.com/Ahmedsherif0023/TodoList-By-Shefo/tree/master"
             />
-            {/* Add more ProjectCard components as needed */}
+            <Card
+              image={Deutschly}
+              title="Deutschly"
+              description="A language learning app for German using React and Vercel."
+              liveLink="https://deutschly.vercel.app/"
+              githubLink="https://github.com/Ahmedsherif0023/Deutschly.git"
+            />
           </div>
         </div>
 
